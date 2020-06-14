@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<title>台灣國家公園介紹</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- HTML5 shim 和 Respond.js 讓IE8支援HTML5元素和媒體查詢 -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css">
+    body{padding-top: 70px;}
+      @media screen and (max-width: 768px) {
+          /*left*/
+          .side-collapse-container-left{
+              position:relative;
+              left:0;
+              transition:left .4s;
+          }
+          .side-collapse-container-left.out{
+              left:70%;
+          }
+          .side-collapse-left {
+              top:50px;
+              bottom:0;
+              left:0;
+              width:70%;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+          }
+          .side-collapse-left.in {
+              width:0;
+          }
+
+          /*right*/
+          .side-collapse-container-right{
+              position:relative;
+              right:0;
+              transition:right .4s;
+          }
+          .side-collapse-container-right.out{
+              right:70%;
+          }
+
+          .side-collapse-right {
+              top:50px;
+              bottom:0;
+              right:0;
+              width:70%;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+          }
+          .side-collapse-right.in {
+              width:0;
+          }
+      }
+
+		</style>
+	</head>
+	<body>
+
+    <!-- 這是一組靠左側的選單 -->
+    <ul class="navbar-nav mr-auto">
+      <!-- active在視覺上設計底色不同,表示目前在這個位置,如果不需要則刪除  -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">  <!-- 加上 dropdown, 表示擁有下一層收合展開的子選單 ********** -->
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">menuItem</a>  <!-- a連結加上 dropdown-toggle 及相關的屬性 ********** -->
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">  <!-- 子選單的 div ********** -->
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">menuItem</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">menuItem</a>
+      </li>
+    </ul>
+    
+<p align="center">
